@@ -7,8 +7,8 @@ $user_id = $data['user_id'];
 
 // Start data deletion
 
-$status_url = 'https://my-json-server.typicode.com/vadogaprisheen/facebookDataDelete/posts?id=1'; // URL to track the deletion
-$confirmation_code = '1'; // unique code for the deletion request
+$status_url = 'https://my-json-server.typicode.com/vadogaprisheen/facebookDataDelete/facebookDeletePlayer.php'; // URL to track the deletion
+$confirmation_code = $data['user_id']; // unique code for the deletion request
 
 $data = array(
   'url' => $status_url,
@@ -19,7 +19,7 @@ echo json_encode($data);
 function parse_signed_request($signed_request) {
   list($encoded_sig, $payload) = explode('.', $signed_request, 2);
 
-  $secret = "signed_request"; // Use your app secret here
+  $secret = "a00f0dbdfa8077db3aa82ea1a08b7399"; // Use your app secret here
 
   // decode the data
   $sig = base64_url_decode($encoded_sig);
