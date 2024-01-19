@@ -1,6 +1,6 @@
 {
-   "algorithm":,
-   "expires":,
-   "issued_at":,
-   "user_id":
+   "algorithm": "HMAC-SHA256",
+   "expires": 1291840400,
+   "issued_at": 1291836800,
+   "user_id": "218471"
 }
